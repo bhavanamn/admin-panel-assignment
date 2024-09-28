@@ -27,7 +27,7 @@ The primary goal of this project is to provide an interface that allows administ
 - **Frontend**: React, Axios, React Router
 - **Backend**: JSON Server (for simulating API)
 - **Database**: JSON file (`db.json`)
-
+Please have a look at this : https://admin-panel-assignment.vercel.app/
 ## Getting Started
 
 
