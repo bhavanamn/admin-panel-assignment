@@ -1,0 +1,87 @@
+/* UserForm.css */
+.user-form-container {
+    max-width: 500px; /* Limit the width of the form */
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .user-form-container h2 {
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #2c3e50; /* Dark color for heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+  }
+  
+  .form-group label {
+    display: block; /* Labels take up a full line */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold text for labels */
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Inner spacing */
+    border: 1px solid #ccc; /* Border around input */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #3498db; /* Change border color on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  .submit-button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Inner spacing */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #3498db; /* Primary color for button */
+    color: white; /* Text color */
+    font-size: 1rem; /* Standard font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9; /* Darker color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-form-container {
+      padding: 15px; /* Less padding on smaller screens */
+    }
+  
+    .user-form-container h2 {
+      font-size: 1.5rem; /* Smaller heading size on small screens */
+    }
+  }
+  .delete-button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Inner spacing */
+    margin-top: 15px; /* Space above the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e74c3c; /* Red color for delete button */
+    color: white; /* Text color */
+    font-size: 1rem; /* Standard font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b; /* Darker color on hover */
+  }
+  

@@ -1,0 +1,151 @@
+/* UserList.css */
+
+.user-list-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-list-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .user-table tr:hover {
+    background-color: #e6f2ff;
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .user-actions a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-link {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .view-link:hover {
+    background-color: #218838;
+  }
+  
+  .edit-link {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .edit-link:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Styles for SearchSort component */
+  .search-sort-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .sort-select {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .user-list-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-sort-container {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .user-table {
+      font-size: 14px;
+    }
+  
+    .user-actions {
+      flex-direction: column;
+    }
+  }
+
+  .delete-button {
+    background-color: #dc3545; /* Use a standard Bootstrap red color for delete */
+    color: white; /* Text color */
+    width: min-content;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 5px; /* More inner spacing for a better click area */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+    font-weight: bold; /* Bold text for emphasis */
+    font-size: 14px; /* Standard font size */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.delete-button:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Optional shadow effect on focus */
+}

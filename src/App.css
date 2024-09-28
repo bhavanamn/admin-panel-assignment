@@ -1,0 +1,105 @@
+/* App.css */
+:root {
+  --primary-color: #3498db;
+  --primary-dark: #2980b9;
+  --secondary-color: #2ecc71;
+  --background-light: #ecf0f1;
+  --background-dark: #34495e;
+  --text-light: #ffffff;
+  --text-dark: #2c3e50;
+  --accent-color: #e74c3c;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--background-light);
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--background-dark);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  /* background-color: var(--primary-color); */
+  color: var(--text-light);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  /* background-color: var(--primary-color); */
+}
+
+.main-header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.main-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--text-light);
+}
+
+.content {
+  background-color: var(--text-light);
+  /* background-color: var(--primary-color); */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some accent to buttons or important elements */
+.button-primary {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
