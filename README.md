@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Admin Panel with User Management and Analytics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional and responsive admin panel designed for user management and analytics on user registration trends. This application utilizes JSON Server to simulate a backend API with a provided `db.json` file.
 
-## Available Scripts
+## Objective
 
-In the project directory, you can run:
+The primary goal of this project is to provide an interface that allows administrators to manage users efficiently and visualize user registration data.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### User Management
 
-### `npm test`
+- **Display User List**: A table displays all users retrieved from the API, including key information such as name, email, and role.
+- **Search and Sort**: 
+  - Search bar for filtering users by any field (e.g., name, email).
+  - Ability to sort users by various attributes (e.g., alphabetically by name, by date of registration).
+- **CRUD Operations**:
+  - **Create**: Admins can add new users via a form, collecting user details such as name, email, and role.
+  - **Read**: View detailed information about a specific user by clicking on them from the user list.
+  - **Update**: Edit user information with an intuitive form.
+  - **Delete**: Remove users with a confirmation prompt.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend**: React, Axios, React Router
+- **Backend**: JSON Server (for simulating API)
+- **Database**: JSON file (`db.json`)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/USERNAME/REPO_NAME.git
+   cd REPO_NAME
+2.npm install
+3.npm install -g json-server
+json-server --watch db.json --port 3001
+4.npm start
+5.Open your browser and go to http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Results:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="931" alt="image" src="https://github.com/user-attachments/assets/ad2d67be-8f51-4a27-99b2-bf9b96c6dd79">
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/1e77cda7-9b9d-48f2-be81-5dcf36772625">
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/4f66c386-ecd9-4e23-b0b6-0c73e162b2ec">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
